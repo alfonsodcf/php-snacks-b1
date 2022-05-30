@@ -35,20 +35,19 @@ $db = [
     <title>Document</title>
 </head>
 <body>
-<?php
-            foreach($db as $key => $value){
-                echo "<h2>{$key}</h2> ";
-                
-               
-               foreach ($value as $props => $item) {
-                echo "<h2>{$item}</h2> ";
-                
-                if($item == 'teachers'){
-                    echo "<p class='grigio'>{$item['name']} - {$item['lastname']}</p>"; 
-                   }else{
-                        echo "<p class='verde'>{$item['name']} - {$item['lastname']}</p>";
-                   }
+    <?php
+        foreach($db as $key => $value){
+            echo "<h2>{$key}</h2> ";
+            
+            if($key == 'teachers'){
+                foreach ($value as $props => $item) {
+                echo "<p class='grigio'>{$item['name']} - {$item['lastname']}</p>"; 
                }
+            }else{
+                foreach ($value as $props => $item) {
+                    echo "<p class='verde'>{$item['name']} - {$item['lastname']}</p>";
+                }
+            }
                 
             }
         ?>
