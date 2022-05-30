@@ -38,10 +38,10 @@ $db = [
             foreach($db as $key => $value){
                 echo "<h2>{$key}</h2> ";
 
-            //     foreach ($value as $props => $item) {
-            //         echo "<li>{$item['title']} - {$item['author']} - {$item['text']}</li>";
-            //     }
-            //     echo "</ul>";
+               foreach ($value as $props => $item) {
+                    echo "{$item['name']} - {$item['lastname']} ";
+               }
+                
             }
         ?>
 </body>
