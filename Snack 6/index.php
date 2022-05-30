@@ -41,6 +41,8 @@ $db = [
                 
                
                foreach ($value as $props => $item) {
+                echo "<h2>{$item}</h2> ";
+                
                 if($item == 'teachers'){
                     echo "<p class='grigio'>{$item['name']} - {$item['lastname']}</p>"; 
                    }else{
